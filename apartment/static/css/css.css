@@ -23,3 +23,10 @@
   color: #fff;
   font-family: 'Montserrat', sans-serif;
 }
+
+
+/*======================== apartment_list style ========================*/
+.apartment_list{
+  padding: 50px 0px;
+  background: #bebebe;
+}
