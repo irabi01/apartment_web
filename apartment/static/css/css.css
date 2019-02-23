@@ -25,8 +25,157 @@
 }
 
 
+/*========================= form_search style =========================*/
+.form_search{
+  padding-bottom: 50px;
+}
+.form_container{
+  background: rgb(46, 60, 74);
+  margin-top: -100px;
+  padding: 50px 0px;
+}
+.form_container form input[type = text]{
+  border: none;
+}
+.form_container form select{
+  border: none;
+  border-radius: 0px;
+  outline: none;
+}
 /*======================== apartment_list style ========================*/
 .apartment_list{
   padding: 50px 0px;
   background: #bebebe;
+}
+
+
+/*============================= about style =============================*/
+.about{
+  padding: 200px 0px;
+  color: #000;
+}
+.about .image_part img{
+  border-radius: 10px;
+}
+.about .description h1{
+  text-align: center;
+  font-size: 30px;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+}
+.about .description p{
+  text-align: justify;
+  font-size: 14px;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*======================= latest_apartment style =======================*/
+.latest_apartment{
+  padding: 100px 0px;
+  background: #ccc;
+}
+.latest_apartment h1{
+  text-align: center;
+  font-size: 30px;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+}
+.latest_apartment span{
+  background: #3399ff;
+  color: #fff;
+  padding: 10px 20px;
+  z-index: 1;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: capitalize;
+}
+.latest_apartment .apartment_container_list{
+  /* border: 1px solid #fff; */
+  /* z-index: -2; */
+  background: #fff;
+  padding-bottom: 20px;
+}
+.latest_apartment .apartment_container_list img{
+  z-index: -2;
+}
+.latest_apartment .apartment_container_list .list_one ul{
+  list-style: none;
+  text-align: left;
+}
+.latest_apartment .apartment_container_list .list_one ul li{
+  display: inline;
+  line-height: 40px;
+  word-spacing: 50px;
+}
+.latest_apartment .apartment_container_list .list_two h1{
+  text-align: justify;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 10px;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+}
+.latest_apartment .apartment_container_list .list_two p{
+  text-align:justify;
+  font-size: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+}
+.latest_apartment .apartment_container_list .list_three ul{
+  list-style: none;
+  text-align: left;
+}
+.latest_apartment .apartment_container_list .list_three ul li{
+  display: inline;
+  line-height: 40px;
+}
+.latest_apartment .apartment_container_list .list_three ul li.button_details{
+  float: right;
+  margin-right: 10px;
+}
+.latest_apartment .apartment_container_list .list_three ul li.button_details a{
+  border-radius: 0px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+.latest_apartment .apartment_container_list .list_three ul li.price{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+
+/*====================== find_your_best_appartment style ======================*/
+.find_your_best_appartment{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../images/bg10.jpg");
+  padding-top:150px;
+  padding-bottom: 250px;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.find_your_best_appartment h1{
+  text-align: text;
+  font-size: 50px;
+  font-weight: bold;
+  padding-left: 10px;
+  color: #fff;
+  text-transform: capitalize;
+  font-family: 'Montserrat', sans-serif;
+}
+.find_your_best_appartment a{
+  border-radius: 0px;
+  border: none;
+  background: #3399ff;
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  height: 50px;
+  padding-top: 15px;
+  text-transform:uppercase;
 }
