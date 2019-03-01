@@ -1,0 +1,71 @@
+{% extends './base.html' %}
+{% block title %}{% endblock %}
+{% block content %}
+  <div class="appartment_page">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Our appartments</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="list">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <div class="my_form">
+            <form>
+              <div class="form-group">
+                <input type="text" name="" class="w3-input" placeholder="enter your keyword here to search">
+              </div>
+            </form>
+          </div>
+          {% if appartments %}
+            {% for appartment in appartments %}
+            <div class="row all_appartment_list w3-card-4">
+              <div class="col-md-4">
+                <img src="/static/images/bg2.jpg" class="img-fluid" width="100%" alt="">
+              </div>
+              <div class="col-md-8">
+                <div class="row one">
+                  <div class="col-md-12">
+                    <h5>{{appartment.title}}</h5>
+                  </div>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="row two">
+                  <div class="col-md-12">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                </div>
+                <div class="dropdown-divider"></div>
+                <div class="row three">
+                  <div class="price">
+                    <h4>${{appartment.price}}</h4>
+                  </div>
+                  <div class="button">
+                    <a href="{% url 'appartmentsDetail' slug=appartment.slug %}" class="btn btn-sm">More Deatails</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          {% else %}
+            <h1>Appartment not available</h1>
+          {% endif%}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="demo_fecth_data">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

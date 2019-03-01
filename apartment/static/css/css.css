@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
+.navigation{
+  background-color: #fff;
+}
+.navigation div ul li a{
+  font-size: 14px;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+}
 /*=========================== home style ===========================*/
 .home{
   background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../images/bg16.jpg");
@@ -30,7 +38,7 @@
   padding-bottom: 50px;
 }
 .form_container{
-  background: rgb(46, 60, 74);
+  background: rgb(46, 60, 74,0.5);
   margin-top: -100px;
   padding: 50px 0px;
 }
@@ -41,6 +49,14 @@
   border: none;
   border-radius: 0px;
   outline: none;
+}
+.form_container form button{
+  color: #fff;
+  background: #3399ff;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 /*======================== apartment_list style ========================*/
 .apartment_list{
@@ -81,6 +97,13 @@
   color: #000;
   font-family: 'Montserrat', sans-serif;
 }
+.latest_apartment p{
+  text-align: center;
+  font-size: 14px;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 30px;
+}
 .latest_apartment span{
   background: #3399ff;
   color: #fff;
@@ -88,12 +111,12 @@
   z-index: 1;
   font-family: 'Montserrat', sans-serif;
   text-transform: capitalize;
+  margin-top: 4px;
 }
 .latest_apartment .apartment_container_list{
-  /* border: 1px solid #fff; */
-  /* z-index: -2; */
   background: #fff;
   padding-bottom: 20px;
+  margin-bottom: 30px;
 }
 .latest_apartment .apartment_container_list img{
   z-index: -2;
@@ -145,6 +168,16 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
 }
+.latest_apartment  a.btn_more_appartments{
+  border-radius: 0px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  height: 50px;
+  padding-top: 15px;
+  text-transform: uppercase;
+}
+
 
 
 /*====================== find_your_best_appartment style ======================*/
@@ -178,4 +211,92 @@
   height: 50px;
   padding-top: 15px;
   text-transform:uppercase;
+}
+
+
+/*=========================== footer style ===========================*/
+.footer{
+  background-color: #191919;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0px;
+}
+
+
+/*========================== appartment_page ==========================*/
+.appartment_page{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../images/bg10.jpg");
+  padding-top:200px;
+  padding-bottom: 200px;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.appartment_page h1{
+  font-size: 70px;
+  text-align: center;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+.list{
+  padding: 100px 0px;
+}
+.list .all_appartment_list{
+  padding: 10px 10px;
+  margin-bottom: 10px;
+}
+.list .all_appartment_list .three{
+  display: block;
+}
+.list .all_appartment_list .three .price{
+  float: left;
+}
+.list .all_appartment_list .three .price h4{
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.list .all_appartment_list .three .button{
+  float: right;
+}
+.list .all_appartment_list .three .button a{
+  color: #fff;
+  background: #3399ff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  padding-top: 10px;
+  height: 40px;
+  border: none;
+  border-radius: 0px;
+}
+.list form input[type = text]{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+
+/*======================= appartment_details style =======================*/
+.appartment_details{
+  padding: 100px 0px;
+}
+.appartment_details h1{
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+.appartment_details p.price{
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+.appartment_details p.paragraph{
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+.appartment_details .two{
+  padding-top: 10px;
 }
