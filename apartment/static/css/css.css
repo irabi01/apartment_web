@@ -472,3 +472,55 @@
   color: #000;
   font-family: 'Montserrat', sans-serif;
 }
+.booking .right_side form label{
+  font-size: 15px;
+  text-align: center;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+}
+.booking .right_side form input[type = text]{
+  font-size: 14px;
+  text-align: justify;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  border-bottom: 1px solid #000;
+}
+.booking .right_side form input[type = number]{
+  font-size: 14px;
+  text-align: justify;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  border-bottom: 1px solid #000;
+}
+.booking .right_side form input[type = email]{
+  font-size: 14px;
+  text-align: justify;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  border-bottom: 1px solid #000;
+}
+.booking .right_side form input[type = date]{
+  font-size: 14px;
+  text-align: justify;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  border-bottom: 1px solid #000;
+}
+.booking .right_side form span{
+  font-size: 14px;
+  text-align: justify;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+}
+.booking .right_side form button{
+  border-radius: 0px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  background: #3399ff;
+  color: #fff;
+  padding: 10px 30px;
+  outline: none;
+  text-transform: capitalize;
+  width: 100%;
+}
