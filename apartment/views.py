@@ -11,6 +11,23 @@ def homeView(request):
         'date': myDate,
     }
     return render(request, 'apartment/home.html', context)
+
+def about_us(request):
+    myDate = datetime.now()
+    context = {
+        'date': myDate,
+    }
+    return render(request, 'apartment/about.html', context)
+
+
+def contact_us(request):
+    myDate = datetime.now()
+    context = {
+        'date': myDate,
+    }
+    return render(request, 'apartment/contact.html', context)
+
+
 def appartmentView(request):
     get_appartment = Appartments.objects.all()
     myDate = datetime.now()
@@ -28,3 +45,11 @@ def appartmentDetailView(request, slug):
         'appartment_details':get_appartment_detail
     }
     return render(request, 'apartment/details.html', context)
+def bookingDeatails(request, slug):
+    get_appartment_detail = get_object_or_404(Appartments, slug = slug)
+    myDate = datetime.now()
+    context = {
+        'date':myDate,
+        'appartment_details':get_appartment_detail
+    }
+    return render(request, 'apartment/booking.html', context)

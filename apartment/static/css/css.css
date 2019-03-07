@@ -85,6 +85,134 @@
   color: #000;
   font-family: 'Montserrat', sans-serif;
 }
+.about .description a{
+  border-radius: 0px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  height: 50px;
+  padding-top: 15px;
+  text-transform: uppercase;
+}
+
+
+/*============================== about_us ==============================*/
+.about_us{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../images/bg16.jpg");
+  padding-top:150px;
+  padding-bottom: 250px;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.about_us h1{
+  font-size: 70px;
+  text-align: center;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+.about_us .about_details{
+  padding: 50px 10px;
+  margin: 30px 0px;
+  background: #ffffff;
+  border-top-left-radius: 40px;
+  color: #000;
+}
+.about_us .about_details p{
+  text-align: justify;
+}
+.message{
+  padding: 100px 0px;
+}
+.message .message_header{
+  padding: 30px 0px;
+}
+.message .message_header h1{
+  font-size: 30px;
+  text-align: center;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+}
+.message .message_header .message_header_line{
+  width: 70px;
+  height: 3px;
+  background: #000;
+  margin: auto;
+}
+.property_details{
+  padding: 100px 0px;
+  background: #ccc;
+}
+.property_details .property_header{
+  padding: 30px 0px;
+}
+.property_details .property_header h1{
+  font-size: 30px;
+  text-align: center;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+}
+.property_details .property_header .property_details_line{
+  width: 70px;
+  height: 3px;
+  background: #000;
+  margin: auto;
+}
+.property_details .property_details_paragraph{
+  color: #000;
+}
+.property_details .property_details_paragraph p{
+  color: #000;
+  text-align: justify;
+  font-family: 'Montserrat', sans-serif;
+}
+.property_details .property_details_paragraph ul{
+  list-style-type: disc;
+}
+.property_details .property_details_paragraph ul li{
+  color: #000;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 30px;
+}
+
+
+
+
+
+
+
+
+
+/*========================== contact_us style ==========================*/
+.contact_us{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../images/bg16.jpg");
+  padding-top:150px;
+  padding-bottom: 250px;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.contact_us h1{
+  font-size: 70px;
+  text-align: center;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+.contact_details{
+  padding: 100px 0px;
+  text-align: center;
+}
+.contact_details h1{
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
 
 /*======================= latest_apartment style =======================*/
 .latest_apartment{
@@ -299,4 +427,10 @@
 }
 .appartment_details .two{
   padding-top: 10px;
+}
+
+
+/*======================= booking page style =======================*/
+.booking{
+  padding: 100px 0px;
 }
