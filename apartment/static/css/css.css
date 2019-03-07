@@ -428,6 +428,15 @@
 .appartment_details .two{
   padding-top: 10px;
 }
+.appartment_details p a{
+  border-radius: 0px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  height: 50px;
+  padding-top: 15px;
+  text-transform: uppercase;
+}
 
 
 /*======================= booking page style =======================*/
