@@ -27,7 +27,9 @@
           <div class="dropdown-divider"></div>
           <p class="roomtype">Room Type: {{appartment_details.room_type}}</p>
           <div class="dropdown-divider"></div>
-          <p class="amenities">Amenities: TV, DSTV, SOFA, Cofee Table and Dining</p>
+          {% if appartment_details.room_type == "Furnished" %}
+            <p class="amenities">Amenities: TV, DSTV, SOFA, Cofee Table and Dining</p>
+          {% endif %}
           <div class="dropdown-divider"></div>
           <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <p><a href="tel:+256778693500" class="btn btn-sm mr-2 btn-info"><i class="fa fa-phone"></i> Direct call</a> <a href="{% url 'bookingDeatails' slug=appartment_details.slug %}" class="btn btn-sm mr-2 btn-primary">Book now</a></p>

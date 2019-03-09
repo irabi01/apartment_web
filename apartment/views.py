@@ -56,8 +56,8 @@ def bookingDeatails(request, slug):
         booking_object = Booking(first_name = firstname, last_name = lastname, email_address = email, phone_number = phone, check_in = datein, check_out = dateout)
         booking_object.save()
         messages.success(request, 'Your booking is done successfuly..!')
-        return redirect('/bookingDeatails/')
-    else:    
+        return redirect('/appartments/')
+    else:
         get_appartment_detail = get_object_or_404(Appartments, slug = slug)
         myDate = datetime.now()
         context = {

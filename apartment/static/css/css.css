@@ -406,6 +406,19 @@
   font-size: 14px;
 }
 
+.appartment_message{
+  padding: 100px 0px;
+}
+.appartment_message div .w3-panel{
+  background: #3399ff;
+}
+.appartment_message div .w3-panel h1{
+  background: #3399ff;
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+
 
 /*======================= appartment_details style =======================*/
 .appartment_details{
@@ -530,3 +543,6 @@
   text-transform: capitalize;
   width: 100%;
 }
+
+
+
