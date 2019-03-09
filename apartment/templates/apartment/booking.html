@@ -13,19 +13,20 @@
         <div class="col-md-6">
           <div class="right_side">
             <h1>Start your booking here</h1>
-            <form>
+            <form method="post" action="">
+              {% csrf_token %}
               <div class="container">
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">
                       <label for="">First Name</label>
-                      <input type="text" name="" value="" placeholder="First name" class="w3-input">
+                      <input type="text" name="fname"  value="" placeholder="First name" class="w3-input">
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-group">
                       <label for="">Last Name</label>
-                      <input type="text" name="" value="" placeholder="Last name" class="w3-input">
+                      <input type="text" name="lname" value="" placeholder="Last name" class="w3-input">
                     </div>
                   </div>
                 </div>
@@ -33,13 +34,13 @@
                   <div class="col-md-6">
                     <div class="form-group">
                       <label for="">Phone Number</label>
-                      <input type="number" name="" value="" placeholder="Phone number" class="w3-input">
+                      <input type="number" name="phone" value="" placeholder="Phone number" class="w3-input">
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-group">
                       <label for="">Email Address</label>
-                      <input type="email" name="" value="" placeholder="Email address" class="w3-input">
+                      <input type="email" name="email" value="" placeholder="Email address" class="w3-input">
                     </div>
                   </div>
                 </div>
@@ -47,13 +48,13 @@
                   <div class="col-md-6">
                     <div class="form-group">
                       <label for="">Check In</label>
-                      <input type="date" name="" value=""class="w3-input">
+                      <input type="date" name="datein" value=""class="w3-input">
                     </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-group">
                       <label for="">Check Out</label>
-                      <input type="date" name="" value="" class="w3-input">
+                      <input type="date" name="dateout" value="" class="w3-input">
                     </div>
                   </div>
                 </div>
