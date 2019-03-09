@@ -29,7 +29,7 @@ def contact_us(request):
 
 
 def appartmentView(request):
-    get_appartment = Appartments.objects.all()
+    get_appartment = Appartments.objects.all().order_by('-id')
     myDate = datetime.now()
     context = {
         'date':myDate,
