@@ -6,21 +6,31 @@
       <div class="row one">
         <div class="col-md-7">
         <img src="/static/images/bg2.jpg" class="img-fluid" width="100%" alt="">
+        <div class="row">
+          <div class="col-md-12">
+            <video width="100%" height="100%" controls>
+              <source src="/static/images/video_one.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
         </div>
         <div class="col-md-5">
           <h1>{{appartment_details.title}}</h1>
           <div class="dropdown-divider"></div>
           <p class="price">Price: ${{appartment_details.price}}/ month</p>
           <div class="dropdown-divider"></div>
+          <p class="price">Number of Bedrooms: {{appartment_details.Bedrooms}}</p>
+          <div class="dropdown-divider"></div>
+          <p class="price">Number of Bathroom: {{appartment_details.Bathroom}}</p>
+          <div class="dropdown-divider"></div>
+          <p class="price">CCTV Camera</p>
+          <div class="dropdown-divider"></div>
+          <p class="price">Room Type: {{appartment_details.room_type}}</p>
+          <div class="dropdown-divider"></div>
+          <p class="price">Amenities: TV, DSTV, SOFA, Cofee Table and Dining</p>
+          <div class="dropdown-divider"></div>
           <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <p><a href="tel:+256778693500" class="btn btn-sm mr-2 btn-info"><i class="fa fa-phone"></i> Direct call</a> <a href="{% url 'bookingDeatails' slug=appartment_details.slug %}" class="btn btn-sm mr-2 btn-primary">Book now</a></p>
-        </div>
-      </div>
-      <div class="row two">
-        <div class="col-md-12">
-          <video width="100%" height="100%" controls>
-          <source src="/static/images/video_one.mp4" type="video/mp4">
-        </video>
         </div>
       </div>
     </div>
