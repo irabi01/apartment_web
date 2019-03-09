@@ -25,3 +25,16 @@ class Appartments(models.Model):
         verbose_name_plural = "Appartments"
     def __str__(self):
         return self.title
+
+
+class Booking(models.Model):
+    first_name = models.CharField(max_length = 50)
+    last_name = models.CharField(max_length = 50)
+    email_address = models.CharField(max_length = 100)
+    phone_number = models.PositiveIntegerField()
+    check_in = models.CharField(max_length = 25)
+    check_out = models.CharField(max_length = 25)
+    class Meta:
+        verbose_name_plural = "Booking Details"
+    def __str__(self):
+        return self.first_name + " " + self.last_name + "-" + self.email_address
