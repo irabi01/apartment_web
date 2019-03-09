@@ -421,6 +421,9 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 }
+.appartment_details p.bedroom, p.bathroom{
+  font-family: 'Montserrat', sans-serif;
+}
 .appartment_details p.paragraph{
   font-size: 15px;
   font-family: 'Montserrat', sans-serif;
