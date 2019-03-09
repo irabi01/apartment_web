@@ -73,6 +73,19 @@
                     </div>
                   </div>
                 </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    {% if messages %}
+                      {% for message in messages %}
+                      <div class="w3-panel w3-display-container w3-green">
+                      <span onclick="this.parentElement.style.display='none'"
+                      class="w3-button w3-display-topright">x</span>
+                        <h1 {% if message.tags %} class="{{message.tags}}" {% endif %}>{{message}}</h1>
+                      </div>
+                      {% endfor %}
+                    {% endif %}
+                  </div>
+                </div>
               </div>
             </form>
           </div>
