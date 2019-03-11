@@ -412,10 +412,12 @@
 }
 
 .appartment_message{
-  padding: 100px 0px;
+  padding: 10px 0px;
 }
 .appartment_message div .w3-panel{
   background: #3399ff;
+  border-radius: 20px;
+  padding: 10px 20px;
 }
 .appartment_message div .w3-panel h1{
   background: #3399ff;
